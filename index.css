@@ -45,10 +45,20 @@
 .main__marquee {
   overflow: hidden;
 }
-
 .main__marquee-wrapper {
+  overflow: hidden;
+  display: flex;
+  animation: marquee 15s linear infinite;
+}
+.main__marquee-wrapper_reverse {
+  overflow: hidden;
+  display: flex;
+  animation: marquee 15s linear reverse infinite;
+}
+.main__marquee-line {
   margin-top: 3rem;
   display: flex;
+  justify-content: center;
 }
 
 .main__brand-light {
@@ -79,6 +89,36 @@
   animation: seeMyWork 500ms infinite alternate;
 }
 
+.main__brands > button::before {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background-color: #f90;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 350ms ease-in-out;
+}
+
 .main__brands > button:hover {
   color: white;
+}
+
+.main__brands > button:hover::before {
+  width: 100%;
+}
+
+.footer {
+  background-color: #f90;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem;
+}
+
+.footer__link {
+  font-size: 8rem;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
 }
