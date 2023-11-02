@@ -1,0 +1,10 @@
+.main__text {
+  font-size: 5vw;
+  color: white;
+  line-height: 2;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  margin-left: 5vw;
+  user-select: none;
+}

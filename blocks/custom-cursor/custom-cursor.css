@@ -1,0 +1,20 @@
+.custom-cursor {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: orange;
+  opacity: 0.8;
+  position: fixed;
+  z-index: 1000;
+  animation: cursorPulse 500ms infinite alternate;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+}
+
+.custom-cursor_active {
+  animation: cursorPulseActive 500ms infinite alternate;
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+}

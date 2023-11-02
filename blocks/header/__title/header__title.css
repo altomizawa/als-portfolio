@@ -10,3 +10,7 @@
   transform: translateY(100%);
   animation: welcome 1s ease-in-out 500ms forwards;
 }
+.header__title > h1 > span {
+  color: lightgrey;
+  font-size: 1rem;
+}

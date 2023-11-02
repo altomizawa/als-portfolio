@@ -8,17 +8,24 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
+    <div class="custom-cursor"></div>
     <header class="header">
       <div class="header__intro-wrapper">
         <div class="header__title">
-          <h1>Hello, I'm Al Tomizawa.<br />Welcome to my site</h1>
+          <h1>
+            Hello, I'm Al Tomizawa.<br />Welcome to my site<br /><span
+              >(scroll to see more)</span
+            >
+          </h1>
         </div>
+
         <lottie-player
           class="header__scroll-icon"
-          src="./assets/scroll.json"
+          src="./assets/scroll2.json"
           background="transparent"
+          color="white"
           speed="1"
-          style="width: 10rem; height: 10rem"
+          style="width: 6rem; height: 6rem"
           loop
           autoplay
         ></lottie-player>
@@ -34,7 +41,7 @@
             <a href="#" class="header__menu-link">HOME</a>
           </li>
           <li class="header__menu-item">
-            <a href="#" class="header__menu-link">WORK</a>
+            <a href="./pages/work.html" class="header__menu-link">WORK</a>
           </li>
           <li class="header__menu-item">
             <a href="#" class="header__menu-link">TALK TO ME</a>
@@ -44,7 +51,7 @@
     </header>
     <main class="main">
       <section class="main__text-wrapper">
-        <h2>
+        <h2 class="main__text">
           I was born and raised in Brazil. <br />After college I moved to
           Atlanta <br />where I had my specialization <br />in Art Direction.
           <br />Later, I ended up moving to NYC <br />and working for BBH NY
@@ -110,13 +117,14 @@
             </div>
           </div>
         </div>
-        <button>SEE MY WORK >>></button>
+        <a href="./pages/work.html">SEE MY WORK >>></a>
       </section>
       <footer class="footer">
         <a class="footer__link">Let's work together</a>
       </footer>
     </main>
     <script src="./index.js"></script>
+    <script src="./javascript/cursor.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>

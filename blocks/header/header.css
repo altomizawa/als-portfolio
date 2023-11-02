@@ -1,6 +1,7 @@
 .header {
   height: 100vh;
   background-color: #333;
+  position: relative;
 }
 
 .header > h1 {

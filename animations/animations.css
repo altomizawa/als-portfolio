@@ -21,3 +21,27 @@
     transform: translateX(-100%);
   }
 }
+
+@keyframes cursorPulse {
+  from {
+    width: 30px;
+    height: 30px;
+  }
+
+  to {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@keyframes cursorPulseActive {
+  from {
+    width: 30px;
+    height: 30px;
+  }
+
+  to {
+    width: 60px;
+    height: 60px;
+  }
+}

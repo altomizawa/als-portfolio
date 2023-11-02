@@ -4,6 +4,7 @@
 @import url(./blocks/root/root.css);
 
 @import url(./animations/animations.css);
+@import url(./blocks/custom-cursor/custom-cursor.css);
 
 @import url(./blocks/header/header.css);
 @import url(./blocks/header/__button/header__button.css);
@@ -18,6 +19,7 @@
 
 @import url(./blocks/main/main.css);
 @import url(./blocks/main/__text-wrapper/main__text-wrapper.css);
+@import url(./blocks/main/__text/main__text.css);
 
 .main__brands {
   background-color: #333;
@@ -77,7 +79,7 @@
   user-select: none;
 }
 
-.main__brands > button {
+.main__brands > a {
   margin-top: 4rem;
   border: none;
   background-color: rgba(0, 0, 0, 0);
@@ -87,9 +89,10 @@
   cursor: pointer;
   transition: 350ms ease-in-out;
   animation: seeMyWork 500ms infinite alternate;
+  text-decoration: none;
 }
 
-.main__brands > button::before {
+.main__brands > a::before {
   content: '';
   width: 0%;
   height: 3px;
@@ -100,11 +103,11 @@
   transition: 350ms ease-in-out;
 }
 
-.main__brands > button:hover {
+.main__brands > a:hover {
   color: white;
 }
 
-.main__brands > button:hover::before {
+.main__brands > a:hover::before {
   width: 100%;
 }
 
@@ -117,8 +120,9 @@
 }
 
 .footer__link {
-  font-size: 8rem;
+  font-size: 6vw;
   color: white;
   font-weight: 500;
   cursor: pointer;
+  z-index: 1;
 }
