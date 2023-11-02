@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600&display=swap');
 
 @import url(./blocks/root/root.css);
 
@@ -17,3 +17,59 @@
 @import url(./blocks/header/__intro-wrapper/header__intro-wrapper.css);
 
 @import url(./blocks/main/main.css);
+@import url(./blocks/main/__text-wrapper/main__text-wrapper.css);
+
+.main__brands {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 8rem;
+  overflow: hidden;
+}
+
+.main__brands-line {
+  width: 150px;
+  height: 5px;
+  background-color: orange;
+}
+
+.main__brands-headline {
+  padding-top: 2rem;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.main__marquee {
+  overflow: hidden;
+}
+
+.main__marquee-wrapper {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.main__brand-light {
+  font-size: 8rem;
+  color: white;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.main__brand-dark {
+  font-size: 8rem;
+  color: #333;
+  font-weight: 400;
+  -webkit-text-stroke: 1px white;
+  white-space: nowrap;
+}
+
+.main__brands > button {
+  margin-top: 2rem;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: grey;
+  font-size: 2.5rem;
+  font-weight: 600;
+}

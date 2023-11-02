@@ -1,0 +1,13 @@
+.main__text-wrapper {
+  max-width: 60%;
+  margin-left: 4rem;
+  padding-block: 20rem;
+  position: relative;
+}
+
+.main__text-wrapper > h2 {
+  font-size: 5rem;
+  color: white;
+  line-height: 2;
+  font-weight: 500;
+}
