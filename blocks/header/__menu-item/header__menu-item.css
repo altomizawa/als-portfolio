@@ -1,0 +1,25 @@
+.header__menu-item {
+}
+
+.header__menu-item > a {
+  text-decoration: none;
+  color: darkslategray;
+  font-size: 3rem;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative; */
+}
+.header__menu-item > a::before {
+  content: '';
+  background-color: orange;
+  width: 0%;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 250ms ease-in-out;
+}
+
+.header__menu-item > a:hover::before {
+  width: 100%;
+}
