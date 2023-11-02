@@ -3,3 +3,12 @@
     transform: translateY(0%);
   }
 }
+
+@keyframes seeMyWork {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.1;
+  }
+}
