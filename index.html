@@ -3,17 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Al's Portfolio</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <header class="header">
+      <div class="header__intro-wrapper">
+        <div class="header__title">
+          <h1>Hello, I'm Al Tomizawa.<br />Welcome to my site</h1>
+        </div>
+        <lottie-player
+          class="header__scroll-icon"
+          src="./assets/scroll.json"
+          background="transparent"
+          speed="1"
+          style="width: 10rem; height: 10rem"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
       <nav class="header__menu">
-        <div class="header__button">
+        <button class="header__button">
           <div class="header__menu-line" id="top"></div>
           <div class="header__menu-line" id="middle"></div>
           <div class="header__menu-line" id="bottom"></div>
-        </div>
+        </button>
         <ul class="header__menu-wrapper">
           <li class="header__menu-item">
             <a href="#" class="header__menu-link">HOME</a>
@@ -27,5 +42,10 @@
         </ul>
       </nav>
     </header>
+    <main class="main">
+      <h2>my work</h2>
+    </main>
+    <script src="./index.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>

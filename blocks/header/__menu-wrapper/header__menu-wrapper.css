@@ -1,7 +1,19 @@
 .header__menu-wrapper {
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 100vh;
+  transform: translateX(100%);
+  transition: 300ms;
+  background-color: #ebebeb;
+  column-gap: 10vw;
+}
+
+@media screen and (max-width: 768px) {
+  .header__menu-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 8rem;
+  }
 }

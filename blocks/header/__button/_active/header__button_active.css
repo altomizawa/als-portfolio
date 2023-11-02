@@ -1,0 +1,19 @@
+.header__button_active > #top {
+  transform: rotate(45deg);
+  transform-origin: top left;
+  background-color: #333;
+}
+.header__button_active > #middle {
+  opacity: 0;
+}
+
+.header__button_active > #bottom {
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+  background-color: #333;
+}
+
+.header__button_active {
+  padding-left: 0.5rem;
+  border-color: #333;
+}

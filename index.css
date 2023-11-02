@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&display=swap');
 
 @import url(./blocks/root/root.css);
 
+@import url(./animations/animations.css);
+
 @import url(./blocks/header/header.css);
 @import url(./blocks/header/__button/header__button.css);
+@import url(./blocks/header/__button/_active/header__button_active.css);
 @import url(./blocks/header/__menu-item/header__menu-item.css);
 @import url(./blocks/header/__menu-line/header__menu-line.css);
 @import url(./blocks/header/__menu-wrapper/header__menu-wrapper.css);
 @import url(./blocks/header/__menu/header__menu.css);
+@import url(./blocks/header/__scroll-icon/header__scroll-icon.css);
+@import url(./blocks/header/__title/header__title.css);
+@import url(./blocks/header/__intro-wrapper/header__intro-wrapper.css);
+
+@import url(./blocks/main/main.css);

@@ -1,0 +1,12 @@
+.header__title {
+  overflow: hidden;
+}
+
+.header__title > h1 {
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  transform: translateY(100%);
+  animation: welcome 1s ease-in-out 500ms forwards;
+}
