@@ -1,0 +1,7 @@
+.main__brand {
+  font-size: 11rem;
+  color: white;
+  font-weight: 400;
+  white-space: nowrap;
+  user-select: none;
+}

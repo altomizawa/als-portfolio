@@ -5,10 +5,9 @@
   background-color: orange;
   opacity: 0.8;
   position: fixed;
+  transform: translate(-50%, -50%);
   z-index: 1000;
   animation: cursorPulse 500ms infinite alternate;
-  transform: translate(-50%, -50%);
-  transform-origin: center center;
 }
 
 .custom-cursor_active {

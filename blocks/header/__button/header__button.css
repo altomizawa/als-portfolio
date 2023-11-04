@@ -13,8 +13,8 @@
   top: 50%;
   transform: translate(-50%, -50%);
   transition: 500ms ease-in-out;
-
   background-color: rgba(0, 0, 0, 0);
+  z-index: 10;
 }
 
 @media screen and (max-width: 768px) {

@@ -7,14 +7,14 @@ function openMenu() {
   menuButton.removeEventListener('click', openMenu);
   menuButton.addEventListener('click', closeMenu);
   header.style.transform = 'translateX(0%)';
-  headerMenu.style.zIndex = '10';
+  //headerMenu.style.zIndex = '10';
 }
 
 function closeMenu() {
   menuButton.classList.remove('header__button_active');
   menuButton.addEventListener('click', openMenu);
   header.style.transform = 'translateX(100%)';
-  headerMenu.style.zIndex = '0';
+  //headerMenu.style.zIndex = '0';
 }
 
 menuButton.addEventListener('click', openMenu);

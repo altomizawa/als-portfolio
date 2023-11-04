@@ -1,0 +1,5 @@
+.main__marquee-wrapper {
+  overflow: hidden;
+  display: flex;
+  animation: marquee 15s linear infinite;
+}

@@ -1,5 +1,6 @@
 .header__menu {
   position: fixed;
+  width: 1px;
   top: 0;
-  width: 100%;
+  z-index: 10;
 }

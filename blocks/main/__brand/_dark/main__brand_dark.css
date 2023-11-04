@@ -1,0 +1,8 @@
+.main__brand_dark {
+  font-size: 11rem;
+  color: #333;
+  font-weight: 400;
+  -webkit-text-stroke: 1px white;
+  white-space: nowrap;
+  user-select: none;
+}

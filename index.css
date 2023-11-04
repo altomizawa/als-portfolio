@@ -20,109 +20,16 @@
 @import url(./blocks/main/main.css);
 @import url(./blocks/main/__text-wrapper/main__text-wrapper.css);
 @import url(./blocks/main/__text/main__text.css);
+@import url(./blocks/main/__brands/main__brands.css);
+@import url(./blocks/main/__brands-line/main__brands-line.css);
+@import url(./blocks/main/__brands-headline/main__brands-headline.css);
+@import url(./blocks/main/__marquee/main__marquee.css);
+@import url(./blocks/main/__marquee-wrapper/main__marquee-wrapper.css);
+@import url(./blocks/main/__marquee-wrapper/_reverse/main__marquee-wrapper_reverse.css);
+@import url(./blocks/main/__marquee-line/main__marquee-line.css);
+@import url(./blocks/main/__brand/main__brand.css);
+@import url(./blocks/main/__brand/_dark/main__brand_dark.css);
+@import url(./blocks/main/__see-work-link/main__see-work-link.css);
 
-.main__brands {
-  background-color: #333;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding-block: 8rem;
-  overflow: hidden;
-}
-
-.main__brands-line {
-  width: 150px;
-  height: 5px;
-  background-color: orange;
-}
-
-.main__brands-headline {
-  padding-top: 2rem;
-  color: white;
-  font-size: 2.5rem;
-  font-weight: 400;
-}
-
-.main__marquee {
-  overflow: hidden;
-}
-.main__marquee-wrapper {
-  overflow: hidden;
-  display: flex;
-  animation: marquee 15s linear infinite;
-}
-.main__marquee-wrapper_reverse {
-  overflow: hidden;
-  display: flex;
-  animation: marquee 15s linear reverse infinite;
-}
-.main__marquee-line {
-  margin-top: 3rem;
-  display: flex;
-  justify-content: center;
-}
-
-.main__brand-light {
-  font-size: 11rem;
-  color: white;
-  font-weight: 400;
-  white-space: nowrap;
-  user-select: none;
-}
-.main__brand-dark {
-  font-size: 11rem;
-  color: #333;
-  font-weight: 400;
-  -webkit-text-stroke: 1px white;
-  white-space: nowrap;
-  user-select: none;
-}
-
-.main__brands > a {
-  margin-top: 4rem;
-  border: none;
-  background-color: rgba(0, 0, 0, 0);
-  color: grey;
-  font-size: 2.5rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 350ms ease-in-out;
-  animation: seeMyWork 500ms infinite alternate;
-  text-decoration: none;
-}
-
-.main__brands > a::before {
-  content: '';
-  width: 0%;
-  height: 3px;
-  background-color: #f90;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transition: 350ms ease-in-out;
-}
-
-.main__brands > a:hover {
-  color: white;
-}
-
-.main__brands > a:hover::before {
-  width: 100%;
-}
-
-.footer {
-  background-color: #f90;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8rem;
-}
-
-.footer__link {
-  font-size: 6vw;
-  color: white;
-  font-weight: 500;
-  cursor: pointer;
-  z-index: 1;
-}
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/footer/__link/footer__link.css);
