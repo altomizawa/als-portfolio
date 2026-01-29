@@ -343,3 +343,56 @@ export const db = [
     ],
   },
 ]
+
+export const menuLinks = [
+  {
+    label: 'JBL', 
+    link: '/work/clients/jbl',
+    id: null
+  },
+  {
+    label: "UNCLE BEN'S", 
+    link: "/work/clients/uncle%20ben's",
+    id: 'two'
+  },
+  {
+    label: 'PLAYSTATION', 
+    link: '/work/clients/playstation',
+    id: 'three'
+  },
+  {
+    label: 'PENNZOIL', 
+    link: '/work/clients/pennzoil',
+    id: 'four'
+  },
+  {
+    label: 'MICHELOB', 
+    link: '/work/clients/michelob',
+    id: 'five'
+  },
+  {
+    label: 'RAIN-X', 
+    link: '/work/clients/rain-x',
+    id: 'six'
+  },
+  {
+    label: 'PLAYSTATION SOCOM', 
+    link: '/work/clients/playstation%20socom',
+    id: 'seven'
+  },
+  {
+    label: 'WHISKAS', 
+    link: '/work/clients/whiskas',
+    id: 'eight'
+  },
+  {
+    label: 'HOOVER', 
+    link: '/work/clients/hoover',
+    id: 'nine'
+  },
+  {
+    label: 'MISCELLANEOUS', 
+    link: '/work/clients/miscellaneous',
+    id: 'ten'
+  }
+]

@@ -1,6 +1,7 @@
 import './Work.css'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import { menuLinks } from '../database/db'
 
 function Work() {
   useGSAP(() => {
@@ -40,47 +41,15 @@ function Work() {
         <h3>Al Tomizawa - Art Director</h3>
       </div>
       <ul className='work__clients'>
-        <li className='work__client-wrapper'>
-          <div className='work__client-line'></div>
-          <a href='/work/clients/jbl' className='work__client-link'>JBL</a>
-        </li>
-        <li className='work__client-wrapper' id='two'>
-          <div className='work__client-line'></div>
-          <a href="/work/clients/uncle%20ben's" className='work__client-link'>UNCLE BEN'S</a>
-        </li>
-        <li className='work__client-wrapper' id='three'>
-          <div className='work__client-line'></div>
-          <a href='/work/clients/playstation' className='work__client-link'>PLAYSTATION</a>
-        </li>
-        <li className='work__client-wrapper' id='four'>
-          <div className='work__client-line'></div>
-          <a href='/work/clients/pennzoil' className='work__client-link'>PENNZOIL</a>
-        </li>
-        <li className='work__client-wrapper' id='five'>
-          <div className='work__client-line'></div>
-          <a href='/work/clients/michelob' className='work__client-link'>MICHELOB</a>
-        </li>
-        <li className='work__client-wrapper' id='six'>
-          <div className='work__client-line'></div>
-          <a href='/work/clients/rain-x' className='work__client-link'>RAIN-X</a>
-        </li>
-        <li className='work__client-wrapper' id='seven'>
-          <div className='work__client-line'></div>
-          <a href='/work/clients/playstation%20socom' className='work__client-link'>PLAYSTATION<br></br> SOCOM</a>
-        </li>
-        <li className='work__client-wrapper' id='eight'>
-          <div className='work__client-line'></div>
-          <a href='/work/clients/whiskas' className='work__client-link'>WHISKAS</a>
-        </li>
-        <li className='work__client-wrapper' id='nine'>
-          <div className='work__client-line'></div>
-          <a href='/work/clients/hoover' className='work__client-link'>HOOVER</a>
-        </li>
-        <li className='work__client-wrapper' id='ten'>
-          <div className='work__client-line'></div>
-          <a href='/work/clients/miscellaneous' className='work__client-link'>MISCELLANEOUS</a>
-        </li>
-      </ul>
+        {menuLinks.map((item, index) => { 
+          return (
+            <li className='work__client-wrapper' key={index} id={item.id}>
+              <div className='work__client-line'></div>
+              <a href={item.link} className='work__client-link'>{item.label}</a>
+            </li>
+          )
+        })}
+        </ul>
 
       {/* ------------------ MOBILE VERSION -------------------- */}
       <div className='work__header_mobile'>
